@@ -25,5 +25,5 @@ jobs:
     - name: Go module download
       run: go mod download
       
-    - name: Go UnitTest
-      run: go test -short  .
+    - name: Go Test
+      run: go test -v -cover -covermode=atomic ./...
