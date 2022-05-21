@@ -34,17 +34,17 @@ import (
 - TimeOrNow(t *time.Time) time.Time  
 - StrOrZero(s *string) string  
 - IOrZero(n *int) int  
-- Int8OrZero(n *int8) int8  
-- Int16OrZero(n *int16) int16  
-- Int32OrZero(n *int32) int32  
-- Int64OrZero(n *int64) int64  
-- UintOrZero(n *uint) uint  
-- Uint8OrZero(n *uint8) uint8  
-- Uint16OrZero(n *uint16) uint16  
-- Uint32OrZero(n *uint32) uint32  
-- Uint64OrZero(n *uint64) uint64  
-- Float32OrZero(n *float32) float32  
-- Float64OrZero(n *float64) float64  
+- I8OrZero(n *int8) int8  
+- I16OrZero(n *int16) int16  
+- I32OrZero(n *int32) int32  
+- I64OrZero(n *int64) int64  
+- UiOrZero(n *uint) uint  
+- Ui8OrZero(n *uint8) uint8  
+- Ui16OrZero(n *uint16) uint16  
+- Ui32OrZero(n *uint32) uint32  
+- Ui64OrZero(n *uint64) uint64  
+- F32OrZero(n *float32) float32  
+- F64OrZero(n *float64) float64  
 
 ---
 
