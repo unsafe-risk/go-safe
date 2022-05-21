@@ -9,10 +9,10 @@ import (
 
 func TestTimeOrNow(t *testing.T) {
 	var val *time.Time
-	assert.Equal(t, TimeOrNow(val), time.Now())
+	assert.NotNil(t, TimeOrNow(val))
 
 	val = new(time.Time)
-	assert.NotEqual(t, TimeOrNow(val), time.Now())
+	assert.Equal(t, TimeOrNow(val), *val)
 }
 
 func TestStrOrZero(t *testing.T) {
