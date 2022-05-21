@@ -1,3 +1,3 @@
 module github.com/unsafe-risk/go-safe
 
-go 1.13
+go 1.17
