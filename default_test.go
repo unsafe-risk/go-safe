@@ -32,6 +32,30 @@ func TestStrOrDefault(t *testing.T) {
 	assert.Equal(t, StrOrDefault(str, def), "")
 }
 
+var _ Safety[*obj] = (*obj)(nil)
+
+type obj struct {
+	val int
+}
+
+func (o *obj) IsNil() bool {
+	return o == nil
+}
+
+func (o *obj) Default() *obj {
+	return &obj{val: 111}
+}
+
+func TestSafe(t *testing.T) {
+	var o *obj
+	assert.Nil(t, o)
+
+	o = Safe(o)
+	assert.NotNil(t, o)
+
+	assert.Equal(t, o, Safe(o))
+}
+
 func TestIOrDefault(t *testing.T) {
 	var i *int
 	def := func() int {
