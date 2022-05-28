@@ -10,50 +10,54 @@ func StrOrZero(s *string) string {
 	return StrOrDefault(s, StrZero)
 }
 
+func NumOrZero[T number](n *T) T {
+	return NumOrDefault[T](n, NumZero[T])
+}
+
 func IOrZero(n *int) int {
-	return IOrDefault(n, IZero)
+	return NumOrZero(n)
 }
 
 func I8OrZero(n *int8) int8 {
-	return I8OrDefault(n, I8Zero)
+	return NumOrZero(n)
 }
 
 func I16OrZero(n *int16) int16 {
-	return I16OrDefault(n, I16Zero)
+	return NumOrZero(n)
 }
 
 func I32OrZero(n *int32) int32 {
-	return I32OrDefault(n, I32Zero)
+	return NumOrZero(n)
 }
 
 func I64OrZero(n *int64) int64 {
-	return I64OrDefault(n, I64Zero)
+	return NumOrZero(n)
 }
 
 func UiOrZero(n *uint) uint {
-	return UiOrDefault(n, UiZero)
+	return NumOrZero(n)
 }
 
 func Ui8OrZero(n *uint8) uint8 {
-	return Ui8OrDefault(n, Ui8Zero)
+	return NumOrZero(n)
 }
 
 func Ui16OrZero(n *uint16) uint16 {
-	return Ui16OrDefault(n, Ui16Zero)
+	return NumOrZero(n)
 }
 
 func Ui32OrZero(n *uint32) uint32 {
-	return Ui32OrDefault(n, Ui32Zero)
+	return NumOrZero(n)
 }
 
 func Ui64OrZero(n *uint64) uint64 {
-	return Ui64OrDefault(n, Ui64Zero)
+	return NumOrZero(n)
 }
 
 func F32OrZero(n *float32) float32 {
-	return F32OrDefault(n, F32Zero)
+	return NumOrZero(n)
 }
 
 func F64OrZero(n *float64) float64 {
-	return F64OrDefault(n, F64Zero)
+	return NumOrZero(n)
 }
