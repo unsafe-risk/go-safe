@@ -7,8 +7,11 @@
 <br>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+
+  [![Go Reference](https://img.shields.io/badge/go-%23007d9c?style=for-the-badge&logo=go&logoColor=white)](https://pkg.go.dev/github.com/unsafe-risk/go-safe)
+
 </div>
+
 
 ## Description
 
